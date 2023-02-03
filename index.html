@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Thisisawebsite</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
   </head>
   <body>
 	<script src="index.js"></script>
     <header>
         <nav class="text-headerbar">
             <ul>
-                <li><a href="https://github.com/LaurenWollaston" target="_blank">Github</a></li>
-                <li>||</li>
-                <li><a href="#">Portfolio</a></li>
-                <li>||</li>
-                <li><a href="#">Contact</a></li>
+                <li class="header"><a href="https://github.com/LaurenWollaston" target="_blank">Github</a></li>
+                <li class="header">||</li>
+                <li class="header"><a href="#">Portfolio</a></li>
+                <li class="header">||</li>
+                <li class="header"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="mainmain">
+    <section class="title2">
         <h1>This is a website</h1>
-        <p>Or is it?</p>
-    </main>
+        <p>You are viewing it.</p>
+    </section>
     <main>
-        <img src="assets/images/mask.png" alt="the mask of tezcatlipoca">
+        <figure>
+            <img src="assets/images/Svia.JPG" alt="An image of the most precious little dog who has ever existed.">
+            <figcaption>This is a photograph of a precious, sleepy little beast.</figcaption>
+        </figure><br>
+        <p class="dot">     "Despite the enormous hyperbole surrounding the Web, current reality is that almost nobody takes it seriously as a business tool. Even though the December 1996 holiday shopping season was the first in which a few merchants reaped significant sales from the Web it is still almost impossible to actually get to buy anything on the Web: one journalist who set out to do all his Christmas shopping on the Web only succeeded in acquiring a single present. The problem is that most companies view their websites as glorified brochures and not as a way of interacting with their customers. The goal of having a website should not be to brag to your friends that you are on the Web but to provide service to your customers (and thus make money)." <br><span class="quote">-Jakob Nielsen, <i>Nielsen Norman Group</i>, Dec 31, 1996</i></span></p>
+        <section id="contact">
+            <h2 class="tcenter">
+                Contact Me
+            </h2>
+        <form>
+            <ul>
+                <li class="contact"><label class="tright" for="name">Name:</label>
+                    <input type="text" id="name" name="user-name">
+                </li>
+                <li class="contact">
+                    <label class="tright" for="email">Email:</label>
+                    <input type="text" id="email" name="user-email">
+                  </li>
+            </ul>
+            <div class="tcenter">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        </section>
     </main>
   </body>
 </html>
